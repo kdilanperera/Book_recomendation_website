@@ -1,24 +1,125 @@
 /* Add a black background color to the top navigation */
-body {
-	font-family: 'Roboto', sans-serif;
-	padding: 0;
-	margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-nav {
+.navbar {
+  background: #e2e2e2;
+}
+
+.navbar .toggle,
+.navbar .brand {
+  display: inline-block;
+}
+.navbar .link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+  background: seagreen;
+  color: white;
+}
+.navbar .link:hover, .navbar .link:active {
+  background: black;
+}
+.navbar .brand {
+  width: 10em;
+  text-align: center;
+  padding: 1em;
+  background: black;
+  color: white;
+}
+.navbar .toggle {
+  padding: 1em;
+  color: black;
+  vertical-align: middle;
+}
+
+@media (min-width: 48em) {
+  .navbar {
+    display: flex;
+  }
+  .navbar .left,
+.navbar .right {
+    display: flex;
+    flex: 1;
+  }
+  .navbar .link {
+    width: auto;
+  }
+  .navbar .right {
+    justify-content: flex-end;
+  }
+  .navbar .toggle {
+    display: none;
+  }
+}
+.navbar div {
+  display: none;
+}
+@media (min-width: 48em) {
+  .navbar div {
+    display: flex;
+  }
+}
+
+@media (max-width: 48em) {
+  .navbar.active .toggle {
+    background: seagreen;
+    color: white;
+  }
+  .navbar.active div {
+    display: block;
+  }
+}
+
+nav img{
+	height: auto;
+    width: auto;
+    max-height: 20px;
+	padding: 5px;
+}
+/*nav {
 	margin: 0;
 	overflow: hidden;
 }
 
-nav ul {
+nav  div {
 	padding: 0;
-
 	margin: 0;
 	display: flex;
 	align-items: center;
 }
 
-nav ul li {
+nav > div div {
+	display: inline;
+	padding: 0 16px;
+	list-style-type: none;
+	vertical-align: middle;
+	border-right: 1px solid #999;
+	margin-top: 2px;
+}
+
+nav > div div a {
+	text-decoration: none;
+	color: #000;
+}
+
+.topnav div:last-child{
+	border: none;
+ }
+
+nav .nav-right {
+	margin-right: auto;
+	padding: 0 2px 0 8px;
+	top: 50%;
+	border-right: none;
+}
+
+nav .nav-right .bookmark {
 	display: inline-block;
 	padding: 0 16px;
 	list-style-type: none;
@@ -27,35 +128,16 @@ nav ul li {
 	margin-top: 2px;
 }
 
-nav ul li a {
-	display: block;
-	text-decoration: none;
-	color: #000;
-}
-
-.topnav li:last-child{
-	border: none;
- }
-
-nav ul li:first-child {
-	margin-right: auto;
-	padding: 0 2px 0 8px;
-	top: 50%;
-	border-right: none;
-}
-
-nav ul li:hover {
+nav > div div a:hover {
 	background-color: rgb(236, 234, 234);
 }
 
-.logo img{
+nav img{
 	height: auto;
     width: auto;
     max-height: 20px;
     max-width: 250px;
 	padding: 5px;
 }
+*/
 
-.bookmark {
-	margin-right: 345px;
-}
