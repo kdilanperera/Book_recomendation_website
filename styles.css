@@ -55,6 +55,15 @@
 	padding: 5px;
 }
 
+.navbar .profile {
+	padding: 0;
+	margin: 0;
+}
+
+.navbar .profile img{
+	max-height: 50px;
+}
+
 .navbar .brand img{
 	height: auto;
     width: auto;
