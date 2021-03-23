@@ -30,10 +30,119 @@
 			</div>
 		  </nav>
 		</header>
-		<div></div>
-		<footer>
-				 
-		</footer>
+		<div class="slide1">
+			<img src="assets/background/Background.jpg" id="cback" class="cback">
+			<img src="assets/background/Cloud left.png" id="ccloudl" class="ccloudl">
+			<img src="assets/background/Cloud Right.png" id="ccloudr" class="ccloudr">
+			<!-- <img src="assets/background/Tree left.png" id="ctreel" class="ctreel">
+			<img src="assets/background/Tree Right.png" id="ctreer" class="ctreer"> -->
+			<img src="assets/background/Hand left.png" id="chandl" class="chandl">
+			<img src="assets/background/Hand Right.png" id="chandr" class="chandr">
+			<img src="assets/background/Text.png" id="ctext" class="ctext">
+			<div class="cbooksanimation">
+				<img src="assets/background/Book 01.png" class="cbook1">
+				<img src="assets/background/Book 02.png" class="cbook2">
+				<img src="assets/background/Book 03.png" class="cbook3">
+				<img src="assets/background/Book 04.png" class="cbook4">
+				<img src="assets/background/Book 05.png" class="cbook5">
+			</div>
+
+			<div class="part b">
+				<div class="slideshow">
+
+					<div class="mySlides fade">
+					  <img src="B/w.jpg" style="width:1524px">
+					
+					</div>
+					
+					<div class="mySlides fade">
+					
+					  <img src="B/W02.jpg" style="width:1524px">
+					
+					</div>
+					
+					<div class="mySlides fade">
+					
+					  <img src="B/W03.jpg" style="width:1524px">
+					
+					</div>
+					<div class="mySlides fade">
+					
+						<img src="B/W04.jpg" style="width:1524px">
+					  
+					  </div>
+					  <div class="mySlides fade">
+					
+						<img src="B/W05.jpg" style="width:1524px">
+					  
+					  </div>
+					
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					
+					</div>
+					<br>
+					
+					<div style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span> 
+					  <span class="dot" onclick="currentSlide(3)"></span> 
+					</div>
+					
+
+			</div>
+
+			<div class='partc'>
+				<img src="B/C- background.jpg" style="width:1524px">
+				
+				<div class="butt1">
+					<p>Simply Click & Discover<br></p><p class="heading">the World of Books</p>
+					<button style="height: 50px; width: 150px">click here</button>
+				</div>
+			</div>
+
+			<div class="parte">
+				<p>Follow us on social media!</p>
+				<div class="laptop">
+					<img src="E/E-01.png">
+					<p>Follow us on Facebook!</p>
+					<button id="lbutt">visite our page</button>
+				</div>
+				<div class="phone">
+				<img src="E/E-02.png">
+				<p>Follow us on Facebook!</p>
+				<button id="pbutt">visite our page</button>
+				</div>
+			</div>
+
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+				</script>
 	</body>
 </html>
 
