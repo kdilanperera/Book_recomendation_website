@@ -77,6 +77,11 @@
 	vertical-align: middle;
 }
 
+/* slideshow */
+.slideshow .mySlides img {
+	width: 100%;
+}
+
 @media (min-width: 48em) {
 	.navbar {
 		display: flex;
@@ -141,17 +146,18 @@
 }
 
 .cback{
-	position:relative;
-	top:0;
-	left:0;
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
 }
 
 .ctreel{
-	position:absolute;
-	top:60px;
-	left:500px;
-	z-index:1;
-	-webkit-transform:rotate(90deg);
+	position: absolute;
+	top: 60px;
+	left: 500px;
+	z-index: 1;
+	-webkit-transform: rotate(90deg);
 	-moz-transform: rotate(90deg);
 	-ms-transform: rotate(90deg);
 	-o-transform: rotate(90deg);
@@ -301,7 +307,7 @@ z-index: 5;
 }
 
 .partc img {
-  height:700px
+	width: 100%;
 }
 .heading{
 	margin-left: 60px;
