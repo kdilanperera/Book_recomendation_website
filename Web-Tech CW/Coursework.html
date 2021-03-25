@@ -10,31 +10,69 @@
 <body>
 <div class="wrap">
 
-    <form>
+    <form name="firstpage">
         <strong><h2>Sign Up</h2></strong>
         <label for="First Name">First Name</label><br>
-        <input type="text" placeholder="First Name" required><br><br>
+        <input type="text" placeholder="First Name" name="fname" ><br><br>
         <label for="Last Name">Last Name</label><br>
-        <input type="text" placeholder="Last Name" required><br><br>
+        <input type="text" placeholder="Last Name" name="lname"><br><br>
         <label for="Agee">Age</label><br>
-        <input type="number" placeholder="Age" required><br><br>
+        <input type="number" placeholder="Age" name="age"><br><br>
         <label for="Username">Username</label><br>
-        <input type="text" placeholder="Username" required><br><br>
+        <input type="text" placeholder="Username" name="uname" ><br><br>
         <label for="Password">Password</label><br>
-        <input type="password" placeholder="Password"  required><br><br>
+        <input type="password" placeholder="Password" name="password"><br><br>
         <label for="Gender">Gender:</label>
-        <input type="radio" Name="Gender" Value="Male">Male
-        <input type="radio" Name="Gender" Value="Female">Female
-        <div class="button">
+        <input type="radio" name="Gender" Value="Male">Male
+        <input type="radio" name="Gender" Value="Female">Female
+        <div class="button" onclick="return validate()">
             <div class="firstbutton">
                 <ul>
-                    <li><a href="SignUp form2.html"><button type="button">Next</button></a></li>
+                    <li><a href="SignUp form2.html"><button type="button"><span>Next</span></button></a></li>
                 </ul>
             </div>
         </div>
     </form>
-
 </div>
+
+<script>
+    function validate(){
+        var x = document.forms["firstpage"]["fname"].value;
+        if (x == ""){
+            alert("First Name must be filled out");
+            return false;
+        }
+        var y = document.forms["firstpage"]["lname"].value;
+        if (y == ""){
+            alert("Last Name must be filled out");
+            return false;
+        }
+        var z = document.forms["firstpage"]["age"].value;
+        if (z == ""){
+            alert("Age must be filled out");
+            return false;
+        }
+        var w = document.forms["firstpage"]["uname"].value;
+        if (w == ""){
+            alert("Username must be filled out");
+            return false;
+        }
+        var v = document.forms["firstpage"]["password"].value;
+        if (v == ""){
+            alert("Password should be filled out");
+            return false;
+        }
+        else if (v.length <= 6){
+            alert("Password should be more than 6 characters");
+            return false;
+        }
+        else if(v.length >= 20){
+            alert("Password should be less than 20 characters");
+            return false;
+        }
+    }
+
+</script>
 
 </body>
 </html>

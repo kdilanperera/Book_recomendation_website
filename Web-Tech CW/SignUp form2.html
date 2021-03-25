@@ -5,12 +5,12 @@
 </head>
 <body>
 <div class="wrap">
-    <form>
+    <form name="secondpage">
         <strong><h2>Sign Up</h2></strong>
         <label for="Phone No.">Phone No.</label>
-        <input type="number" placeholder="+94_ _ _ _ _ _ _ _ _" ><br><br>
+        <input type="number" placeholder="+94_ _ _ _ _ _ _ _ _" name="num"><br><br>
         <label for="E-mail">E-mail</label>
-        <input type="email" placeholder="E-mail"><br><br>
+        <input type="email" placeholder="E-mail" name="email"><br><br>
         <label for="GenreF">Pick Your Category:</label>
         <div class="button">
             <ul>
@@ -40,10 +40,10 @@
             <option value="30">30</option>
         </select><br>
         <div class="button">
-            <div class="button3">
+            <div class="button3" >
                 <ul>
                     <a href="Coursework.html"><button type="button">Back</button></a>
-                    <button type="button">Submit</button>
+                    <button type="button" onclick="return validatepage2()">Submit</button>
                 </ul>
             </div>
         </div>
@@ -51,6 +51,24 @@
     </form>
 
 </div>
+<script>
+    function validatepage2(){
+        var a = document.forms["secondpage"]["num"].value;
+        if (a == ""){
+            alert("Phone Number should be filled out");
+            return false;
+        }
+        var b = document.forms["secondpage"]["email"].value;
+        if (b == ""){
+            alert("E-mail should be filled out");
+            return false;
+        }
+        else{
+            alert("Dear Malitha, Thank you for using Pagerec, the recommended  results will be shown in a while")
+        }
+        
+    }
+</script>
 </body>
     
 </html>
