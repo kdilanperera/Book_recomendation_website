@@ -1,8 +1,11 @@
 /* navbar styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 * {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	font-family: 'Roboto', sans-serif;
+
 }
 
 .navbar {
@@ -170,9 +173,9 @@
 	left:540px;
 }
 
-.cbooksanimation{
+/* .cbooksanimation{
 	margin-top:-310px;
-}
+} */
 
 .chandl{
 	position:absolute;
@@ -376,3 +379,157 @@ z-index: 5;
 	margin-left:1120px;
 }
 
+.partd{
+	width:100%;
+	display: inline-flex;
+}
+
+ .col1 img{
+	display: flex;
+}
+.col2 img{
+	display: flex;
+}
+.col3 img{
+	display: flex;
+}
+.col4 img{
+	display: flex;
+}
+
+.partg{
+	background-color: #999;
+}
+
+.partg img{
+	position: absolute;
+	z-index: -1;
+	width: 50%;
+}
+
+ .names{
+	display: inline-flex;
+	align-items: center;
+	position:absolute;
+	margin-left: 800px;
+	margin-top: 100px;
+	
+}
+
+.names input{
+	
+	background: transparent;
+	border-color: #fff;
+	border-width: 1px;
+	height: 30px;
+	
+}
+
+.email{
+	margin-left: 800px;
+	display: inline-flex;
+	align-items: center;
+	position:absolute;
+	margin-top: 200px;
+	
+}
+
+.email input{
+	
+	background: transparent;
+	border-color: #fff;
+	border-width: 1px;
+	height: 30px;
+	
+}
+
+
+
+.comment{
+	margin-left: 800px;
+	display: inline-flex;
+	align-items: center;
+	position:absolute;
+	margin-top: 300px;
+	
+}
+
+.comment textarea{
+	
+	background: transparent;
+	border-color: #fff;
+	border-width: 1px;
+	
+} 
+
+.partg h1{
+	position: absolute;
+	margin-top: 30px;
+	z-index: 5;
+	padding: 200px;
+	font-size: 80px;
+	color: white;
+}
+
+.partg p{
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 340px;
+	z-index: 5;
+	padding: 200px;
+	font-size: 200px;
+	color: white;
+}
+
+.buton button{
+	margin-left: 1000px;
+	margin-top: -250px;
+}
+ .reset{
+	margin-left: 900px;
+	margin-top: 500px;
+}
+
+/* .rating {
+	float: left;
+    height: 46px;
+    padding: 0 10px;
+	margin-left: 900px;
+}
+
+.rating:not(:checked)  input {
+    position:absolute;
+    top:-9999px;
+}
+
+.rating:not(:checked)  label {
+	overflow:hidden;
+    float:right;
+	font-size:30px;
+    width:30px;
+    white-space:nowrap;
+    color:rgb(204, 204, 204);
+	cursor:pointer;
+}
+
+.rating:not(:checked)  label:before {
+	/* displaying a star for the sure */
+    /* content: '★ ';
+} */
+/* setting colors before clicking and after hovering on it */
+.rating  input:checked ~ label {
+    color: #ffc700;    
+}
+
+.rating:not(:checked)  label:hover,
+.rating:not(:checked)  label:hover ~ label {
+    color: #deb217;  
+}
+
+.rating  input:checked + label:hover,
+.rating  input:checked + label:hover ~ label,
+.rating  input:checked ~ label:hover,
+.rating  input:checked ~ label:hover ~ label,
+.rating  label:hover ~ input:checked ~ label {
+    color: #c59b08;
+} */
