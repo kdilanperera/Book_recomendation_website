@@ -15,7 +15,7 @@ body{
 }
 
 .logo img{
-    width: 440px;
+    width: 650px;
     height: auto;
     display: block;
     margin-left: auto;
@@ -33,27 +33,27 @@ body{
 }
 
 .names li{
-    font-size: 27px;
+    font-size: 40px;
     display: inline-block;
     padding: 1px;
-    margin-right: 50px;
+    margin-right: 5px;
     margin-left: auto;
-    padding-left: 5px;   
+    padding-left: 120px;   
 }
 
 button {
-    width:120px;
-    height: 28px;
-    margin: 27px;
+    width:175px;
+    height: 45px;
+    margin: 40px;
     text-align: center;
     float: right;
-    margin-top: 165px;
+    margin-top: 310px;
     border: #c1c1c1 solid 1px;
     border-radius: 2px;
     box-sizing: border-box;
     background: transparent;
     color: white;
-    font-size: 17px;
+    font-size: 28px;
 }
 
 button .wrap{
@@ -62,5 +62,5 @@ button .wrap{
 
 .wrap :hover{
     background-color: black;
-    opacity: 0.2;
+    opacity: 0.5;
 }

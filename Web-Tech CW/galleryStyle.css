@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url("BG.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+.crime {
+    margin-left: 750px;
+    margin-right: auto;
+    padding-top: 16%;
+    font-family: cursive;
+    
+}
+
+.crime button{
+    width: 440px;
+    height: 120px;
+    background-color: transparent;
+    color: white;
+    font-size: 90px;
+    border-radius: 8px;
+    border: #c1c1c1 solid 2px;
+
+
+}
+
+.romance {
+    width: 390px;
+    height: auto;
+    margin-left: 680px;
+    margin-right: auto;
+    padding-top: 14%;
+}
+
+.adventure{
+    width: 400px;
+    height: auto;
+    margin-left: 685px;
+    margin-right: auto;
+    padding-top: 11%;
+}
+
+.comic{
+    width: 390px;
+    height: auto;
+    margin-left: 735px;
+    margin-right: auto;
+    padding-top: 11%;
+}
+
+.autobiography{
+    width: 270px;
+    height: auto;
+    margin-left: 560px;
+    margin-right: auto;
+    padding-top: 11%;
+}
+
+
+/* 
+.crime button {
+    background: white;
+    background-color:transparent;
+    height: 50px;
+    border: #c1c1c1 solid 1px;
+    
+} */
+
+.romance button{
+    background-color: transparent;
+    border: #c1c1c1 solid 1px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.adventure button{
+    background-color: transparent;
+    border: #c1c1c1 solid 1px;
+    border-radius: 8px;
+
+}
+
+.comic button{
+    background-color: transparent;
+    border: #c1c1c1 solid 1px;
+    border-radius: 8px;
+
+}
+
+.autobiography button{
+    background-color: transparent;
+    border: #c1c1c1 solid 1px;
+    border-radius: 8px;
+}
+
+.romance button :hover{
+    background-color:red;
+    opacity: 0.65;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.crime :hover{
+   background-color: red;
+   opacity: 0.65;
+   border-radius: 8px;
+   cursor: pointer;
+
+
+}
+
+.adventure button :hover{
+    background-color:red;
+    opacity: 0.65;
+    border-radius: 8px;
+    cursor: pointer;
+
+
+}
+
+.comic button :hover{
+    background-color:red;
+    opacity: 0.65;
+    border-radius: 8px;
+    cursor: pointer;
+
+
+}
+
+.autobiography button :hover{
+    background-color:red;
+    opacity: 0.65;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.editor button{
+    background-color: white;
+    width:180px;
+    height: 45px;
+    margin: 40px;
+    text-align: center;
+    float: right;
+    margin-top: 175px;
+    border: #c1c1c1 solid 1px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background: transparent;
+    color: white;
+    font-size: 28px;
+}
+
+.editor :hover{
+    background-color: white transparent;
+    opacity: 0.55;
+}
+
+
+
+
+
+
