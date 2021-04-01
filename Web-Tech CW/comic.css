@@ -1,5 +1,6 @@
 body{
     background-image: url("inside BG  03.jpg");
+    overflow: hidden;
 }
 .container{
     width: 90%;
@@ -9,6 +10,27 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.container2{
+    width: 92%;
+    padding: 20px;
+    margin: 400px auto;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.textbox{
+    color: white;
+    width: 300px;
+    height: 150px;
+    background: transparent;
+    margin: 0px 7px;
+    transition: 1s;
+    margin-top: -400px;
+    padding-left: 1.5%;
 }
 
 .box{
@@ -21,7 +43,12 @@ body{
 .box:hover{
     transform: scale(1.3);
     z-index: 2;
-    box-shadow: 2px 2px 2px #000;
+    cursor: pointer;
+}
+
+.textbox:hover{
+    transform: scale(1.3);
+    z-index: 2;
     cursor: pointer;
 }
 
