@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Turnapage</title>
-
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-		<link rel="stylesheet" href="styles.css">
-	</head>
-	<body>
-		<header>
-		  <nav class="navbar">
+<head>
+	<title>Turnapage</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar">
 			<a href="#" class="toggle">menu</a>
-			<a href="#" class="brand"><img src="assets/images/pagerec-logo.png"></a>
+			<a href="#" class="brand"><img src="./assets/images/pagerec-logo.png"></a>
 			<div class="left">
 				<div class="bookmark">
-					<a href="#" class="link"><img src="assets/images/bookmark-img.png"></a>
+					<a href="#" class="link"><img src="./assets/images/bookmark-img.png"></a>
 					<a href="#" class="link">Bookmark</a>
-			  	</div>
+				</div>
 			</div>
 			<div class="right">
 				<a href="#home" class="link">home</a>
@@ -28,136 +26,187 @@
 				<a href="" class="link">review</a>
 				<a class="profile"><img src="assets/images/account.png"></a>
 			</div>
-		  </nav>
-		</header>
-		<div class="slide1">
-			<img src="assets/background/Background.jpg" id="cback" class="cback">
+		</nav>
+	</header>
+	<div class="slide1">
+		<div class="container">
+			<video id="slides" autoplay muted loop>
+				<source src="./assets/videos/06.mp4">
+			</video>
+			<ul class="nav">
+				<li onMouseOver="videoUrl('./assets/videos/06.mp4')"><img src="./assets/images/thumbs/img6.png"></li>
+				<li onMouseOver="videoUrl('./assets/videos/01.mp4')"><img src="./assets/images/thumbs/img1.png"
+						alt="something" onclick="showing(src='/WebTech/index.html')"></li>
+				<li onMouseOver="videoUrl('./assets/videos/02.mp4')"><img src="./assets/images/thumbs/img2.png"></li>
+				<li onMouseOver="videoUrl('./assets/videos/03.mp4')"><img src="./assets/images/thumbs/img3.png"></li>
+				<li onMouseOver="videoUrl('./assets/videos/04.mp4')"><img src="./assets/images/thumbs/img4.png"></li>
+				<li onMouseOver="videoUrl('./assets/videos/05.mp4')"><img src="./assets/images/thumbs/img5.png"></li>
+			</ul>
+		</div>
+		<!-- <img src="assets/background/Background.jpg" id="cback" class="cback">
 			<img src="assets/background/Cloud left.png" id="ccloudl" class="ccloudl">
-			<!--<img src="assets/background/Cloud Right.png" id="ccloudr" class="ccloudr"> 
+			<img src="assets/background/Cloud Right.png" id="ccloudr" class="ccloudr"> 
 			<img src="assets/background/Tree left.png" id="ctreel" class="ctreel">
 			<img src="assets/background/Tree Right.png" id="ctreer" class="ctreer"> -->
-			<img src="assets/background/Hand left.png" id="chandl" class="chandl">
+		<!-- <img src="assets/background/Hand left.png" id="chandl" class="chandl">
 			<img src="assets/background/Hand Right.png" id="chandr" class="chandr">
-			<img src="assets/background/Text.png" id="ctext" class="ctext">
-			<!-- <div class="cbooksanimation">
+			<img src="assets/background/Text.png" id="ctext" class="ctext"> -->
+		<!-- <div class="cbooksanimation">
 				<img src="assets/background/Book 01.png" class="cbook1">
 				<img src="assets/background/Book 02.png" class="cbook2">
 				<img src="assets/background/Book 03.png" class="cbook3">
 				<img src="assets/background/Book 04.png" class="cbook4">
 				<img src="assets/background/Book 05.png" class="cbook5">
 			</div> -->
+	</div>
+	<div class="parta">
+		<!-- start Quiz button -->
+		<div class="ignition"><button>Start Quiz</button></div>
+		<!-- Info Box -->
+		<div class="information">
+			<div class="rules-title"><span>Some Rules of this Quiz</span></div>
+			<div class="rules-list">
+				<div class="rules">i. gfj sdfhhf gsf hgfb.</div>
+				<div class="rules">ii. hyggh hyg uhn vgv.</div>
+				<div class="rules">iii. jd suh djd jcsbzj daa.</div>
+				<div class="rules">iv. usah dshjh dshcnbs.</div>
+				<div class="rules">v. jushdvj dncjdsa dca.</div>
+			</div>
+			<div class="main-buttons">
+				<a href="abc.html"><button class="exit">Return</button></a>
+				<button class="start">Resume</button>
+			</div>
 		</div>
-			<div class="part b">
-				<div class="slideshow">
-
-					<div class="mySlides fade">
-					  <img src="B/w.jpg">
-					
-					</div>
-					
-					<div class="mySlides fade">
-					
-					  <img src="B/W02.jpg">
-					
-					</div>
-					
-					<div class="mySlides fade">
-					
-					  <img src="B/W03.jpg">
-					
-					</div>
-					<div class="mySlides fade">
-					
-						<img src="B/W04.jpg">
-					  
-					  </div>
-					  <div class="mySlides fade">
-					
-						<img src="B/W05.jpg">
-					  
-					  </div>
-					
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1)">&#10095;</a>
-					
-					</div>
-					<br>
-					
-					<div style="text-align:center">
-					  <span class="dot" onclick="currentSlide(1)"></span> 
-					  <span class="dot" onclick="currentSlide(2)"></span> 
-					  <span class="dot" onclick="currentSlide(3)"></span> 
-					</div>
-					
-
+		<!-- Quiz Box -->
+		<div class="quiz_box">
+			<header>
+				<div class="question_count">
+				</div>
+				<div class="counter">
+					<div class="count-remaining">Sec</div>
+					<div class="counter_sec">15</div>
+				</div>
+				<div class="loadingbar"></div>
+			</header>
+			<section>
+				<div class="questions_text_holder">
+				</div>
+				<div class="mcqs">
+				</div>
+			</section>
+			<!-- footer of Quiz Box -->
+			<footer class="footerjsquiz">
+				<div class="question_count">
+				</div>
+				<button class="quiznext">Next</button>
+			</footer>
+		</div>
+		<div class="rewards">
+			<div class="icon">
+				<ima>
 			</div>
-
-			<div class='partc'>
-				<img src="B/C- background.jpg">
-				
-				<div class="butt1">
-					<p>Simply Click & Discover<br></p><p class="heading">the World of Books</p>
-					<button style="height: 50px; width: 150px">click here</button>
-				</div>
+			<div class="message1">Congratulations!</div>
+			<div class="total_score">
 			</div>
-
-			<div class="partd">
-				 <div class="col1">
-					 <img src="D/Books - 06.jpg"><br>
-					 <img src="D/Books - 09.jpg"><br>
-					 <img src="D/Books - 08.jpg"><br>
-				 </div><br>
-				 <div class="col2">
-					<img src="D/Books - 04.jpg"><br>
-					<img src="D/Books - 03.jpg"><br>
-					<img src="D/Books - 05.jpg">
-				</div>
-				<div class="col3">
-					<img src="D/Books - 07.jpg"><br>
-					<img src="D/Books - 12.jpg"><br>
-					<img src="D/Books - 02.jpg"><br>
-				</div>
-				<div class="col4">
-					<img src="D/Books - 01.jpg"><br>
-					<img src="D/Books - 11.jpg"><br>
-					<img src="D/Books - 10.jpg">
-				</div>
+			<div class="main-buttons">
+				<button class="start">Replay Quiz</button>
+				<a href="abc.html"><button class="exit">exit Quiz</button></a>
 			</div>
-
-			<div class="parte">
-				<p>Follow us on social media!</p>
-				<div class="laptop">
-					<img src="E/E-01.png">
-					<!--p>Follow us on Facebook!</p-->
-					<button id="lbutt">visite our page</button>
-				</div>
-				<div class="phone">
-				<img src="E/E-02.png">
-				<!--p>Follow us on Facebook!</p-->
-				<button id="pbutt">visite our page</button>
-				</div>
+		</div>
+		<script src="./js quiz/questions.js"></script>
+		<script src="./js quiz/script.js"></script>
+	</div>
+	<div class="part b">
+		<div class="slideshow">
+			<div class="mySlides fade">
+				<img src="B/w.jpg">
 			</div>
-			<br><br>
-			<div class="partg">
-				<div>
-					<h1>How Can <br>We Help</h1>
-					<p>?</p>
-					<img src="G/BG.jpg">
-					
-				</div>
+			<div class="mySlides fade">
+				<img src="B/W02.jpg">
 			</div>
-			<div class="form">
-				<div class="names">
-					<label>First Name</label>
-					<input type="text" id="firstname">
-					<label>Last Name</label><br>
-					<input type="text" id="lastname">
-				</div>
-				<div class="email">
-					<label>Email</label>
-					<input type="email" name="email" id="email">
-				</div>
-				<!-- <label>
+			<div class="mySlides fade">
+				<img src="B/W03.jpg">
+			</div>
+			<div class="mySlides fade">
+				<img src="B/W04.jpg">
+			</div>
+			<div class="mySlides fade">
+				<img src="B/W05.jpg">
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+	</div>
+	<div class='partc'>
+		<img src="B/C- background.jpg">
+		<div class="butt1">
+			<p>Simply Click & Discover<br></p>
+			<p class="heading">the World of Books</p>
+			<button style="height: 50px; width: 150px">click here</button>
+		</div>
+	</div>
+	<div class="partd">
+		<div class="col1">
+			<img src="D/Books - 06.jpg"><br>
+			<img src="D/Books - 09.jpg"><br>
+			<img src="D/Books - 08.jpg"><br>
+		</div><br>
+		<div class="col2">
+			<img src="D/Books - 04.jpg"><br>
+			<img src="D/Books - 03.jpg"><br>
+			<img src="D/Books - 05.jpg">
+		</div>
+		<div class="col3">
+			<img src="D/Books - 07.jpg"><br>
+			<img src="D/Books - 12.jpg"><br>
+			<img src="D/Books - 02.jpg"><br>
+		</div>
+		<div class="col4">
+			<img src="D/Books - 01.jpg"><br>
+			<img src="D/Books - 11.jpg"><br>
+			<img src="D/Books - 10.jpg">
+		</div>
+	</div>
+	<div class="parte">
+		<p>Follow us on social media!</p>
+		<div class="laptop">
+			<img src="E/E-01.png">
+			<!--p>Follow us on Facebook!</p-->
+			<button id="lbutt">visite our page</button>
+		</div>
+		<div class="phone">
+			<img src="E/E-02.png">
+			<!--p>Follow us on Facebook!</p-->
+			<button id="pbutt">visite our page</button>
+		</div>
+	</div>
+	<br><br>
+	<div class="partg">
+		<div>
+			<h1>How Can <br>We Help</h1>
+			<p>?</p>
+			<p class="msgform">We Value Your Feedback</p>
+			<img src="G/BG.jpg" height="700px">
+		</div>
+	</div>
+	<div class="form">
+		<div class="names">
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+			<label>Last Name</label><br>
+			<input type="text" id="lastname">
+		</div>
+		<div class="email">
+			<label>Email</label>
+			<input type="email" name="email" id="email">
+		</div>
+		<!-- <label>
 					<span class = "text">Rate</span>
 					<div class="rating">
 						<input type="radio" id="star1" name="rate" value="1" /> 
@@ -172,49 +221,54 @@
 						<label for="star5" title="text"> 5th star</label>
 					  </div>
 					</label> -->
-				<div class="comment">
-					<label>
-						<label>Message</label>
-						<textarea id="text" rows="6" cols="50"></textarea>
-					</label>
-				</div>
-
-				<div class="buton">
-					<input class="reset" type="reset" value="Reset">
-					<button class="submit" onClick="myFunction()" name="register">Submit</button>
-				</div>
-			</div>
-			<script src="validation.js"></script>
-			<script>
-
-
-				var slideIndex = 1;
-				showSlides(slideIndex);
-				
-				function plusSlides(n) {
-				  showSlides(slideIndex += n);
-				}
-				
-				function currentSlide(n) {
-				  showSlides(slideIndex = n);
-				}
-				
-				function showSlides(n) {
-				  var i;
-				  var slides = document.getElementsByClassName("mySlides");
-				  var dots = document.getElementsByClassName("dot");
-				  if (n > slides.length) {slideIndex = 1}    
-				  if (n < 1) {slideIndex = slides.length}
-				  for (i = 0; i < slides.length; i++) {
-					  slides[i].style.display = "none";  
-				  }
-				  for (i = 0; i < dots.length; i++) {
-					  dots[i].className = dots[i].className.replace(" active", "");
-				  }
-				  slides[slideIndex-1].style.display = "block";  
-				  dots[slideIndex-1].className += " active";
-				}
-				</script>
-	</body>
+		<div class="comment">
+			<label>
+				<label>Message</label>
+				<textarea id="text" rows="6" cols="50"></textarea>
+			</label>
+		</div>
+		<div class="buton">
+			<input class="reset" type="reset" value="Reset">
+			<button class="submit" onClick="myFunction()" name="register">Submit</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function videoUrl(play) {
+			document.getElementById("slides").src = play;
+		}
+		function showing(xyz) {
+			location.replace(xyz)
+		}
+	</script>
+	<script src="validation.js"></script>
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {
+				slideIndex = 1
+			}
+			if (n < 1) {
+				slideIndex = slides.length
+			}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+		}
+	</script>
+</body>
 </html>
-
