@@ -355,54 +355,52 @@
     color: #fff;
 }
 
-.parte p {
-    font-size: 50px;
+.socials .heading {
+    font-size: 64px;
     text-align: center;
     margin-top: 100px;
 }
 
-.laptop img {
-    width: 700px;
-    margin-left: 100px;
-    margin-top: 70px;
+.social-links {
+	display: flex;
+	flex-flow: row;
 }
 
-.phone img {
-    height: 540px;
-    margin-left: 70%;
-    margin-top: -4000px;
-    padding-bottom: 0px;
+.social-links div {
+	width: 100%;
 }
 
-.laptop p {
-    font-size: 30px;
-    margin-left: -600px;
-    margin-top: 15px;
+.social-links img {
+	display: block;
+	margin: auto;
 }
 
-.phone p {
-    font-size: 30px;
-    margin-right: -840px;
-    margin-top: -80px;
+.social-links .laptop {
+	padding-top: 30px
 }
 
-#lbutt {
-    position: absolute;
-    background: white;
-    padding: 10px 10px 10px 10px;
-    font-size: 18px;
-    margin-left: -410px;
-    margin-top: 540px;
+.social-links button,
+.social-links p {
+	text-align: center;
+	display: block;
+	margin: 10px auto;
+	font-size: 40px;
+	font-weight: 200;
 }
 
-#pbutt {
-    background: white;
-    padding: 10px 10px 10px 10px;
-    font-size: 18px;
-    margin-left: 1140px;
-    margin-top: 10px;
+.social-links button {
+	background-color: #fff;
+	font-size: 36px;
+	padding: 5px 50px;
+	border: 1px solid #000;
+	color: #000;
+	font-weight: 200;
+}
 
-
+.social-links button:hover {
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
 }
 
 .partd {
