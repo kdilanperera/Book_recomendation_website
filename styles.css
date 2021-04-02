@@ -451,61 +451,6 @@
     width: 50%;
 }
 
-.names {
-    display: inline-flex;
-    align-items: center;
-    position: absolute;
-    margin-left: 800px;
-    margin-top: 100px;
-
-}
-
-.names input {
-
-    background: transparent;
-    border-color: #fff;
-    border-width: 1px;
-    height: 30px;
-
-}
-
-.email {
-    margin-left: 800px;
-    display: inline-flex;
-    align-items: center;
-    position: absolute;
-    margin-top: 200px;
-
-}
-
-.email input {
-
-    background: transparent;
-    border-color: #fff;
-    border-width: 1px;
-    height: 30px;
-
-}
-
-
-
-.comment {
-    margin-left: 800px;
-    display: inline-flex;
-    align-items: center;
-    position: absolute;
-    margin-top: 300px;
-
-}
-
-.comment textarea {
-
-    background: transparent;
-    border-color: #fff;
-    border-width: 1px;
-
-}
-
 .partg h1 {
     position: absolute;
     margin-top: 30px;
@@ -532,16 +477,6 @@
     padding: 200px;
     font-size: 200px;
     color: white;
-}
-
-.buton button {
-    margin-left: 1000px;
-    margin-top: -250px;
-}
-
-.reset {
-    margin-left: 900px;
-    margin-top: 500px;
 }
 
 /* .rating {
@@ -1025,4 +960,132 @@ section .mcqs .option .icon {
 .parta {
     box-sizing: border-box;
     height: 100px;
+}
+
+.feedback {
+	display: flex;
+	flex-flow: row;
+	font-size: 40px;
+}
+
+.feedback .column {
+	width: 100%;
+	height: 920px;
+	text-align: center;
+	color: white;
+}
+
+.feedback .one {
+	background-image: url("G/BG.jpg");
+}
+
+.feedback .center {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.feedback .two {
+	background: #636363;
+	height: 920px;
+}
+
+.feedback .flex {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.feedback .left {
+	text-align: right;
+	font-size: 80px;
+}
+
+.feedback .right {
+	text-align: left;
+	font-size: 160px;
+}
+
+/* feedback form */
+.feedback-form {
+	width: 80%;
+}
+
+.feedback-form label {
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	font-weight: 100;
+	font-size: 36px;
+	padding-top: 24px;
+}
+
+#fullname {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#fullname > div {
+  padding: 0 2px;
+}
+
+/*Register Button div*/
+
+#register_button {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  width: 50%;
+}
+
+/*Register Form div*/
+
+#register_form {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 15px;
+  width: 50%;
+}
+
+#register {
+  font-size: 14px;
+  font-weight: bolder;
+  width: 50%;
+  background-color: #000;
+  color: white;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.feedback-form input[type="text"],
+.feedback-form textarea,
+.feedback-form select {
+  font-size: 16px;
+  width: 100%;
+  padding: 5px 20px;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #636363; 
+  color: white;
+}
+
+.feedback-form input[type="submit"] {
+	background-color:#c94030;
+	font-size: 28px;
+	padding: 5px 50px;
+	border: 1px solid #ccc;
+	color: white;
 }
