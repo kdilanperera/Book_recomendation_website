@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="main.css">
+</head>
+
+<body id="all">
+
+
+
+<img style="width:100%;"src="Images/Start.jpg">
+
+<div class="store">  
+<nav role="navigation" class="navigation">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Store</a>
+    <ul class="dropdown">
+        <li><a href="s">Adventure</a></li>
+        <li><a href="#comics">Comics</a></li>
+        <li><a href="#">Third</a></li>
+        <li><a href="#">Fourth</a></li>
+    </ul>
+		</li>
+		<li><a href="#">About Us</a></li>
+	</ul>
+</nav>
+
+  <button id="checkout" class="checkoutButton" onclick="checkoutredirect()">Checkout</button>
+  <button class="fontbutton decreasebutton" id="button2" value="smaller" type="button" onclick="changeFontSize(this)">A-</button>
+  <button class="fontbutton inreasebutton" id="button1" value="larger" type="button" onclick="changeFontSize(this)">A+</button>
+
+<div class = "category" >
+	<h1 class = "category" id="Adventure" >Adventure</h4>
+<div class = "row">
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Adventure/A1.jpg" alt="Adventure Book" width = "220" height = "320">
+			<h3 id="bookname"> The Hobbit</h3>
+			<h4 id="bookauthor"> JRR. Tolkien</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2500/= </p>
+			<button class="addToCart" id ="book1" value="The Hobbit,2500" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Adventure/A2.jpg" alt="Adventure Book" width = "220" height = "320">
+			<h3 id="bookname"> Robinson Crusoe</h3>
+			<h4 id="bookauthor"> Dainel Defoe </h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2600/= </p>
+			<button class="addToCart" id ="book2" value="Robinson Crusoei,2600" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Adventure/A3.jpg" alt="Adventure Book" width = "220" height = "320">
+			<h3 id="bookname"> Hatchet</h3>
+			<h4 id="bookauthor"> Gary Paulsen</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2200/= </p>
+			<button class="addToCart" id ="book3" value="Hatchet,2200"onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Adventure/A4.jpg" alt="Adventure Book" width = "220" height = "320">
+			<h3 id="bookname"> Treasure Island</h3>
+			<h4 id="bookauthor"> Robert Stevenson</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2500/= </p>
+			<button class="addToCart" id ="book4" value="Treasure Island,2500" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Adventure/A5.jpg" alt="Adventure Book" width = "220" height = "320"/>
+			<h3 id="bookname"> The Three Musketeers</h3>
+			<h4 id="bookauthor"> Jules Verne</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2900/= </p>
+			<button class="addToCart" id ="book5" value="The Three Musketeers,2900" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+</div>
+<div class = "row">
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Adventure/A6.jpg" alt="Adventure Book" width = "220" height = "320">
+			<h3 id="bookname"> In To The Wild</h3>
+			<h4 id="bookauthor"> Jon Krakauer</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 3500/= </p>
+			<button class="addToCart" id ="book1" value="In To The Wild,3500" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Adventure/A7.jpg" alt="Adventure Book" width = "220" height = "320">
+			<h3 id="bookname"> Heart Of Darkness</h3>
+			<h4 id="bookauthor"> Joeseph Conrad </h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 1600/= </p>
+			<button class="addToCart" id ="book2" value=" Heart Of Darkness,1600" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Adventure/A12.jpg" alt="Adventure Book" width = "220" height = "320">
+			<h3 id="bookname"> The Call Of The Wild</h3>
+			<h4 id="bookauthor"> Jack London </h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 1600/= </p>
+			<button class="addToCart" id ="book2" value=" The Call Of The Wild,1600" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Adventure/A9.jpg" alt="Adventure Book" width = "220" height = "320">
+			<h3 id="bookname"> King Solomon's Mines</h3>
+			<h4 id="bookauthor"> H. Rider Haggard</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2500/= </p>
+			<button class="addToCart" id ="book4" value=" King Solomon's Mines,2500" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Adventure/A10.jpg" alt="Adventure Book" width = "220" height = "320"/>
+			<h3 id="bookname"> Lord Of The Flies</h3>
+			<h4 id="bookauthor"> William Golding</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2900/= </p>
+			<button class="addToCart" id ="book5" value="Lord Of The Flies,2900" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+</div>
+
+<div class = "row">
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Adventure/A11.jpg" alt="Adventure Book" width = "220" height = "320">
+			<h3 id="bookname"> Adventures Of Huckleberry Finn</h3>
+			<h4 id="bookauthor"> Mark Twain</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 3300/= </p>
+			<button class="addToCart" id ="book1" value=" Adventures Of Huckleberry Finn,3300" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+		<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Adventure/A13.jpg" alt="Adventure Book" width = "220" height = "320"/>
+			<h3 id="bookname"> The Lord Of The Rings : The Two Towers</h3>
+			<h4 id="bookauthor"> JRR. Tolkien</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2900/= </p>
+			<button class="addToCart" id ="book5" value="LOTR : The Two Towers,2900" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Adventure/A8.jpg" alt="Adventure Book" width = "220" height = "320">
+			<h3 id="bookname"> Journey To The Center Of The Earth</h3>
+			<h4 id="bookauthor"> Jules Verne</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2200/= </p>
+			<button class="addToCart" id ="book3" value="Journey To The Center OTE,2200"onclick="addedToCartMessage()" >Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Adventure/A14.jpg" alt="Adventure Book" width = "220" height = "320">
+			<h3 id="bookname"> Around The World In Eighy Days</h3>
+			<h4 id="bookauthor"> Jules Verne</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2200/= </p>
+			<button class="addToCart" id ="book3" value="Around The World In Eighy Days,2200"onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Adventure/A15.jpg" alt="Adventure Book" width = "220" height = "320">
+			<h3 id="bookname"> Twenty Thousand Leagues Under The Sea</h3>
+			<h4 id="bookauthor"> Jules Verne</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2500/= </p>
+			<button class="addToCart" id ="book4" value="Twenty Thousand Leagues UTS,2500" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+
+</div>
+</div>
+<div class = "category" >
+<h1 class = "category" id="Crime" >Crime</h4>
+<div class = "row">
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Crime/C1.jpg" alt="Crime Book" width = "220" height = "320">
+			<h3 id="bookname"> In Cold Blood</h3>
+			<h4 id="bookauthor"> Truman Capote</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 3300/= </p>
+			<button class="addToCart"  value="In Cold Blood,3300" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+		<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Crime/C2.jpg" alt="Crime Book" width = "220" height = "320"/>
+			<h3 id="bookname"> The Stranger Beside Me</h3>
+			<h4 id="bookauthor"> Ann Rule</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2900/= </p>
+			<button class="addToCart"  value="The Stranger Beside Me,2900" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Crime/C3.jpg" alt="Crime Book" width = "220" height = "320">
+			<h3 id="bookname"> Helter Skelter</h3>
+			<h4 id="bookauthor"> Vincet Buliosi</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2200/= </p>
+			<button class="addToCart"  value=" Helter Skelter,2200"onclick="addedToCartMessage()" >Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Crime/C6.jpg" alt="Crime Book" width = "220" height = "320">
+			<h3 id="bookname"> American Predadtor</h3>
+			<h4 id="bookauthor"> Maureen Callahan</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2500/= </p>
+			<button class="addToCart"  value="American Predadtor,2500"onclick="addedToCartMessage() ">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Crime/C7.jpg" alt="Crime Book" width = "220" height = "320">
+			<h3 id="bookname"> Mindhunter</h3>
+			<h4 id="bookauthor"> John Douglas</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2700/= </p>
+			<button class="addToCart"  value="Mindhunter,2700" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+
+</div>	
+
+<div class = "row">
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Crime/C15.jpg" alt="Crime Book" width = "220" height = "320">
+			<h3 id="bookname"> Raven Black</h3>
+			<h4 id="bookauthor"> Ann Cleeves</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2700/= </p>
+			<button class="addToCart"  value="Raven Black,2700" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Crime/C14.jpg" alt="Crime Book" width = "220" height = "320">
+			<h3 id="bookname"> The Dry</h3>
+			<h4 id="bookauthor"> Jane Harper</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2500/= </p>
+			<button class="addToCart"  value=" The Dry,2500" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Crime/C10.jpg" alt="Crime Book" width = "220" height = "320">
+			<h3 id="bookname"> Killer Of The Flower Moon</h3>
+			<h4 id="bookauthor"> David Grann</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2100/= </p>
+			<button class="addToCart"  value=" Killer Of The Flower Moon,2100"onclick="addedToCartMessage()" >Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Crime/C11.jpg" alt="Crime Book" width = "220" height = "320">
+			<h3 id="bookname"> The Thursday Murder Club</h3>
+			<h4 id="bookauthor"> Rochard Osman</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2500/= </p>
+			<button class="addToCart"  value=" The Thursday Murder Club,2500"onclick="addedToCartMessage() ">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Crime/C12.jpg" alt="Crime Book" width = "220" height = "320">
+			<h3 id="bookname"> The Lost Village</h3>
+			<h4 id="bookauthor"> Camilla Sten</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2700/= </p>
+			<button class="addToCart"  value=" The Lost Village,2700" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+
+</div>	
+
+<div class = "row">
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Crime/C4.jpg" alt="Crime Book" width = "220" height = "320">
+			<h3 id="bookname"> Under The Banner Of Haven</h3>
+			<h4 id="bookauthor"> Jon Krakauer</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2900/= </p>
+			<button class="addToCart"  value=" Under The Banner Of Haven,2900" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+		<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Crime/C9.jpg" alt="Crime Book" width = "220" height = "320"/>
+			<h3 id="bookname"> The Girl With The Dragon Tatto</h3>
+			<h4 id="bookauthor">Stieg Larsson</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2200/= </p>
+			<button class="addToCart"  value="The Girl With The Dragon Tatto,2200" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Crime/C13.jpg" alt="Crime Book" width = "220" height = "320">
+			<h3 id="bookname"> Murder On The Orient Express</h3>
+			<h4 id="bookauthor"> Agatha Christie</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 3100/= </p>
+			<button class="addToCart"  value=" Murder On The Orient Express,3100"onclick="addedToCartMessage()" >Add to Cart</button>
+		</div>
+	</div>
+
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Crime/C5.jpg" alt="Crime Book" width = "220" height = "320">
+			<h3 id="bookname"> The Hound Of The Baskervilles</h3>
+			<h4 id="bookauthor"> Arthir Conan Doyle</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2900/= </p>
+			<button class="addToCart"  value="The Hound Of The Baskervilles,2900" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Crime/C8.jpg" alt="Crime Book" width = "220" height = "320"/>
+			<h3 id="bookname"> The Devil In The White City</h3>
+			<h4 id="bookauthor">Erik Larson</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2200/= </p>
+			<button class="addToCart"  value="The Devil In The White City,2200" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+</div>	
+</div>
+<div class = "category" >
+<h1 class = "category" id="bio" >Autobiography</h4>
+<div class = "row">
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Autobiography/B1.jpg" alt="Autobiography Book" width = "220" height = "320">
+			<h3 id="bookname"> A Promised Land</h3>
+			<h4 id="bookauthor"> Barack Obama</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2800/= </p>
+			<button class="addToCart"  value="A Promised Land,2800" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+		<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Autobiography/B3.jpg" alt="Autobiography Book" width = "220" height = "320"/>
+			<h3 id="bookname"> Born a Crime</h3>
+			<h4 id="bookauthor"> Trevor Noah</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2900/= </p>
+			<button class="addToCart"  value="Born a Crime,2900" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Autobiography/B4.jpg" alt="Autobiography Book" width = "220" height = "320">
+			<h3 id="bookname"> Long Walk To Freedom</h3>
+			<h4 id="bookauthor"> Nelson Mandela</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2200/= </p>
+			<button class="addToCart"  value="Long Walk To Freedom,2200" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Autobiography/B5.jpg" alt="Autobiography Book" width = "220" height = "320">
+			<h3 id="bookname"> Autobiography Of A Yogi</h3>
+			<h4 id="bookauthor">P. Yogananda</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2200/= </p>
+			<button class="addToCart"  value="Autobiography Of A Yogi,2200"onclick="addedToCartMessage() ">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Autobiography/B7.jpg" alt="Autobiography Book" width = "220" height = "320">
+			<h3 id="bookname">I Am Malala</h3>
+			<h4 id="bookauthor"> Malala Yousafzai</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2700/= </p>
+			<button class="addToCart"  value="I Am Malala,2700" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+</div>	
+<div class = "row">
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Autobiography/B8.jpg" alt="Autobiography Book" width = "220" height = "320">
+			<h3 id="bookname"> Open</h3>
+			<h4 id="bookauthor"> Andre Agassi</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2100/= </p>
+			<button class="addToCart"  value="Open,2100" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+		<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Autobiography/B10.jpg" alt="Autobiography Book" width = "220" height = "320"/>
+			<h3 id="bookname"> Wings Of Fire</h3>
+			<h4 id="bookauthor"> APJ. Abdul Kalam</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2900/= </p>
+			<button class="addToCart"  value="Wings Of Fire,2900" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Autobiography/B12.jpg" alt="Autobiography Book" width = "220" height = "320">
+			<h3 id="bookname"> Mein Kampf</h3>
+			<h4 id="bookauthor"> Adolf Hitler</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 3200/= </p>
+			<button class="addToCart"  value="Mein Kampf,3200"onclick="addedToCartMessage()" >Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Autobiography/B15.jpg" alt="Autobiography Book" width = "220" height = "320">
+			<h3 id="bookname"> Night</h3>
+			<h4 id="bookauthor">Elie Wiesel</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2200/= </p>
+			<button class="addToCart"  value="Night,2200"onclick="addedToCartMessage()" >Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Autobiography/B11.jpg" alt="Autobiography Book" width = "220" height = "320">
+			<h3 id="bookname">The Prelude</h3>
+			<h4 id="bookauthor"> William Wordsworth</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 3700/= </p>
+			<button class="addToCart"  value="The Prelude,3700" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+</div>	
+<div class = "row">
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Autobiography/B2.jpg" alt="Autobiography Book" width = "220" height = "320">
+			<h3 id="bookname">Mahatma Gandhi - An Autobiography</h3>
+			<h4 id="bookauthor"> Mahatma Gandhi</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2100/= </p>
+			<button class="addToCart"  value="Mahatma Gandhi - An Autobiography,2100" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+		<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Autobiography/B6.jpg" alt="Autobiography Book" width = "220" height = "320"/>
+			<h3 id="bookname"> The Autobiography Of Benjamin Franklin</h3>
+			<h4 id="bookauthor"> Benjamin Franklin</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2900/= </p>
+			<button class="addToCart"  value="The Autobiography Of Benjamin Franklin,2900" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Autobiography/B9.jpg" alt="Autobiography Book" width = "220" height = "320">
+			<h3 id="bookname">Tomorrow Will Be A Good Day</h3>
+			<h4 id="bookauthor">Captain Tom</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 3300/= </p>
+			<button class="addToCart"  value="Tomorrow Will Be A Good Day,3300"onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Autobiography/B13.jpg" alt="Autobiography Book" width = "220" height = "320">
+			<h3 id="bookname">I Know Why The Caged Bird Sings</h3>
+			<h4 id="bookauthor">Maya Angelou</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2200/= </p>
+			<button class="addToCart"  value="I Know Why The Caged Bird,2200" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Autobiography/B14.jpg" alt="Autobiography Book" width = "220" height = "320">
+			<h3 id="bookname">The Diary Of A Young Girl - Anne Frank</h3>
+			<h4 id="bookauthor"> Anne Frank</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 3700/= </p>
+			<button class="addToCart"  value="The Diary Of A Young Girl,3700" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+</div>
+</div>	
+<div class = "category" >
+<h1 class = "category" id="romantic" >Romantic</h4>
+<div class = "row">
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Romantic/R1.jpg" alt="Romantic Book" width = "220" height = "320">
+			<h3 id="bookname"> Pride And Prejudice</h3>
+			<h4 id="bookauthor"> BJane Austen</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2400/= </p>
+			<button class="addToCart"  value="Pride And Prejudice,2400" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+		<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Romantic/R2.jpg" alt="Romantic Book" width = "220" height = "320"/>
+			<h3 id="bookname"> Charlotte Bronte</h3>
+			<h4 id="bookauthor"> Jane Eyre</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2900/= </p>
+			<button class="addToCart"  value="Charlotte Bronte,2900" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Romantic/R3.jpg" alt="Romantic Book" width = "220" height = "320">
+			<h3 id="bookname"> Outlander</h3>
+			<h4 id="bookauthor">Diana Gabaldon</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2200/= </p>
+			<button class="addToCart"  value="Outlander,2200"onclick="addedToCartMessage()" >Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Romantic/R4.jpg" alt="Romantic Book" width = "220" height = "320">
+			<h3 id="bookname"> The Duke And I</h3>
+			<h4 id="bookauthor">Julia Quinn</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2200/= </p>
+			<button class="addToCart"  value="The Duke And I,2200"onclick="addedToCartMessage()" >Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Romantic/R5.jpg" alt="Romantic Book" width = "220" height = "320">
+			<h3 id="bookname">Notebook</h3>
+			<h4 id="bookauthor"> Nicholas Sparks</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2700/= </p>
+			<button class="addToCart"  value="Notebook,2700" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+</div>	
+<div class = "row">
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Romantic/R6.jpg" alt="Romantic Book" width = "220" height = "320">
+			<h3 id="bookname"> Wuthering Heights</h3>
+			<h4 id="bookauthor"> Emily Bronte</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2400/= </p>
+			<button class="addToCart"  value="Wuthering Heights,2400" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+		<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Romantic/R7.jpg" alt="Romantic Book" width = "220" height = "320"/>
+			<h3 id="bookname"> Eleanor & Park</h3>
+			<h4 id="bookauthor"> Rainbo Rowell</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2900/= </p>
+			<button class="addToCart"  value="Eleanor & Park,2900" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Romantic/R8.jpg" alt="Romantic Book" width = "220" height = "320">
+			<h3 id="bookname"> The Kiss Quitient</h3>
+			<h4 id="bookauthor">Helen Hoang</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2100/= </p>
+			<button class="addToCart"  value=" The Kiss Quitient,2100"onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Romantic/R9.jpg" alt="Romantic Book" width = "220" height = "320">
+			<h3 id="bookname"> Me Before You</h3>
+			<h4 id="bookauthor">Jojo Moyes</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2800/= </p>
+			<button class="addToCart"  value=" Me Before You,2800"onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Romantic/R10.jpg" alt="Romantic Book" width = "220" height = "320">
+			<h3 id="bookname">The Thorn Birds</h3>
+			<h4 id="bookauthor"> Collen McCullough</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2300/= </p>
+			<button class="addToCart"  value="The Thorn Birds,2300" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+</div>	
+<div class = "row">
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Romantic/R11.jpg" alt="Romantic Book" width = "220" height = "320">
+			<h3 id="bookname"> The Fault In Our Stars</h3>
+			<h4 id="bookauthor"> John Green</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 3900/= </p>
+			<button class="addToCart"  value="The Fault In Our Stars,3900" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+		<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Romantic/R12.jpg" alt="Romantic Book" width = "220" height = "320"/>
+			<h3 id="bookname"> The Wedding Party</h3>
+			<h4 id="bookauthor"> Jasmine Guillory</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2900/= </p>
+			<button class="addToCart"  value="The Wedding Party,2900" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Romantic/R13.jpg" alt="Romantic Book" width = "220" height = "320">
+			<h3 id="bookname"> Vision In White</h3>
+			<h4 id="bookauthor">Nora Roberts</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2100/= </p>
+			<button class="addToCart"  value=" Vision In White,2100"onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Romantic/R14.jpg" alt="Romantic Book" width = "220" height = "320">
+			<h3 id="bookname"> Beach Read</h3>
+			<h4 id="bookauthor">Emily Henry</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 3200/= </p>
+			<button class="addToCart"  value="Beach Read,3200"onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Romantic/R15.jpg" alt="Romantic Book" width = "220" height = "320">
+			<h3 id="bookname">The Proposal</h3>
+			<h4 id="bookauthor"> Jasmine Guillory</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2900/= </p>
+			<button class="addToCart"  value="The Proposal,2900" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+</div>
+</div>
+<div class = "category" >
+<h1 class = "category" id="comics" >Comics</h4>
+<div class = "row">
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Comic/M1.jpg" alt="Comic Book" width = "220" height = "320">
+			<h3 id="bookname"> A Contract With God</h3>
+			<h4 id="bookauthor"> Will  Eisner</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2900/= </p>
+			<button class="addToCart"  value=" A Contract With God,2900" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+		<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Comic/M2.jpg" alt="Comic Book" width = "220" height = "320"/>
+			<h3 id="bookname"> The Overstreet</h3>
+			<h4 id="bookauthor"> Robert M</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2900/= </p>
+			<button class="addToCart"  value="The Overstreet,2900" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Comic/M3.jpg" alt="Comic Book" width = "220" height = "320">
+			<h3 id="bookname"> Batman Three Jokers</h3>
+			<h4 id="bookauthor">Geoff Johns</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2400/= </p>
+			<button class="addToCart"  value="Batman Three Jokers,2400" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Comic/M4.jpg" alt="Comic Book" width = "220" height = "320">
+			<h3 id="bookname"> Spider Man</h3>
+			<h4 id="bookauthor">Todd McFarlane</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2500/= </p>
+			<button class="addToCart"  value="Spider Man,2500" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Comic/M5.jpg" alt="Comic Book" width = "220" height = "320">
+			<h3 id="bookname">Batman The Killing Joke</h3>
+			<h4 id="bookauthor"> Alam Moore</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2700/= </p>
+			<button class="addToCart"  value="Matman The Killing Joke,2700" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+</div>	
+<div class = "row">
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Comic/M6.jpg" alt="Comic Book" width = "220" height = "320">
+			<h3 id="bookname"> Maus</h3>
+			<h4 id="bookauthor"> Art Spielgelam</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2650/= </p>
+			<button class="addToCart"  value="Maus,2650" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+		<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Comic/M7.jpg" alt="Comic Book" width = "220" height = "320"/>
+			<h3 id="bookname"> Origins of Marvel</h3>
+			<h4 id="bookauthor">Stan Lee</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2900/= </p>
+			<button class="addToCart"  value="Origins of Marvel,2900" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Comic/M8.jpg" alt="Comic Book" width = "220" height = "320">
+			<h3 id="bookname"> X-Men</h3>
+			<h4 id="bookauthor">Claremont </h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2400/= </p>
+			<button class="addToCart"  value="X-Men,2400"onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Comic/M9.jpg" alt="Comic Book" width = "220" height = "320">
+			<h3 id="bookname">The New Teen Titans </h3>
+			<h4 id="bookauthor">Wolfman</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2700/= </p>
+			<button class="addToCart"  value="The Teen Titans,2700"onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Comic/M10.jpg" alt="Comic Book" width = "220" height = "320">
+			<h3 id="bookname">The Immortal Hulk</h3>
+			<h4 id="bookauthor">Sal Buscema</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2700/= </p>
+			<button class="addToCart"  value="The Immortal Hulk,2700" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+</div>	
+<div class = "row">
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Comic/M11.jpg" alt="Comic Book" width = "220" height = "320">
+			<h3 id="bookname"> Thor : God Of Thunder</h3>
+			<h4 id="bookauthor"> Will  Eisner</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2900/= </p>
+			<button class="addToCart"  value="Thor,2900" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+		<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Comic/M12.jpg" alt="Comic Book" width = "220" height = "320"/>
+			<h3 id="bookname"> Original Sin</h3>
+			<h4 id="bookauthor"> Jason Aaron</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2900/= </p>
+			<button class="addToCart"  value="Original Sin,2900" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Comic/M13.jpg" alt="Comic Book" width = "220" height = "320">
+			<h3 id="bookname"> Venom</h3>
+			<h4 id="bookauthor">Donny Cates</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2400/= </p>
+			<button class="addToCart"  value="Venom,2400"onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Comic/M14.jpg" alt="Comic Book" width = "220" height = "320">
+			<h3 id="bookname"> Arkam Asylum</h3>
+			<h4 id="bookauthor">Grant Morrison</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2500/= </p>
+			<button class="addToCart"  value="Arkam Asylum,2500" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Comic/M15.jpg" alt="Comic Book" width = "220" height = "320">
+			<h3 id="bookname">The Amazing Spider-Man</h3>
+			<h4 id="bookauthor"> Gerry Donway</h4>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2700/= </p>
+			<button class="addToCart"  value="The Amazing Spider-Man,2700" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+</div>	
+
+</div>
+<div class="voucher">
+	<div class="card">
+		<div class="columnCard">
+			<img width="769px" height="334px"src="Images/gv1.jpg" alt="Voucher 1" />
+		</div>
+		<div class="columnCard2">
+			<h3 >Buy a Gift Voucher for your loved ones</h3>
+			<button class="addToCart" id ="voucher1" value="Voucher 500/=,500" onclick="addedToCartMessage()">Add to Cart</button>			
+		</div>	
+	</div>
+	
+	<div class="card">
+		<div class="columnCard">
+			<img width="769px" height="334px"src="Images/gv2.jpg" alt="Voucher 2" />
+		</div>
+		<div class="columnCard2">
+			<h3 >Buy a Gift Voucher for your loved ones</h3>
+			<button class="addToCart" id ="voucher2" value="Voucher 1000/=,1000" onclick="addedToCartMessage()">Add to Cart</button>			
+		</div>	
+	</div>
+	
+	<div class="card">
+		<div class="columnCard">
+			<img width="769px" height="334px"src="Images/gv3.jpg" alt="Voucher 3" />
+		</div>
+		<div class="columnCard2">
+			<h3 >Buy a Gift Voucher for your loved ones</h3>
+			<button class="addToCart" id ="voucher3" value="Voucher 2000/=,2000" onclick="addedToCartMessage()">Add to Cart</button>			
+		</div>	
+	</div>
+</div>
+
+<div class = "category" >
+	<h1 class = "category" id="Other" >Others</h4>
+<div class = "row">
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Other/01.png" alt="Pen 1" width = "250" height = "320">
+			<h3 id="bookname"> Gel Ink Roller Ball Pen - Black</h3>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2500/= </p>
+			<button class="addToCart" id ="other1" value="Gel Ink Roller Ball Pen - Black,2500" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Other/02.png" alt="Pen 2" width = "250" height = "320">
+			<h3 id="bookname"> Gel Ink Roller Ball Pen - White</h3>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 2500/= </p>
+			<button class="addToCart" id ="other2" value="Gel Ink Roller Ball Pen - White,2500" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Other/10.png" alt="Tripod Lamp" width = "250" height = "320">
+			<h3 id="bookname">Mid-Century Tripod Floor Lamp</h3>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 4500/= </p>
+			<button class="addToCart" id ="other2" value="Mid-Century Tripod Lamp,4500" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Other/04.png" alt="Stand1" width = "250" height = "320">
+			<h3 id="bookname">Bamboo Adjustable Bookstand</h3>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 4000/= </p>
+			<button class="addToCart" id ="other2" value="Adjustable Book Stand,4000" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Other/05.png" alt="Stand2" width = "250" height = "320">
+			<h3 id="bookname"> Taschen's Bookstand - Transparent</h3>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 7500/= </p>
+			<button class="addToCart" id ="other2" value="Taschen's Bookstand,7000" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+</div>
+
+<div class = "row">
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Other/06.png" alt="Bookmark1" width = "250" height = "320">
+			<h3 id="bookname"> Bookmarks</h3>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 200/= </p>
+			<button class="addToCart" id ="other1" value="Bookmarks,200" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Other/07.png" alt="Bookmark2" width = "250" height = "320">
+			<h3 id="bookname"> Bookmarks</h3>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 250/= </p>
+			<button class="addToCart" id ="other2" value="Bookmarks,250" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Other/08.png" alt="Magnifying glass" width = "250" height = "320">
+			<h3 id="bookname"> Magnifying Glass</h3>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 700/= </p>
+			<button class="addToCart" id ="other2" value="Magnifying Glass,700" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Other/09.png" alt="Bookmark3" width = "250" height = "320">
+			<h3 id="bookname">Bookmark </h3>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 250/= </p>
+			<button class="addToCart" id ="other2" value="Bookmark,250" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Other/03.png" alt="Lamp" width = "250" height = "320">
+			<h3 id="bookname"> Table Lamp</h3>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 1000/= </p>
+			<button class="addToCart" id ="other2" value="Table Lamp,1000" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	
+</div>
+
+<div class = "row">
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Other/06.png" alt="Bookmark1" width = "250" height = "320">
+			<h3 id="bookname"> Bookmarks</h3>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 200/= </p>
+			<button class="addToCart" id ="other1" value="Bookmarks,200" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Other/07.png" alt="Bookmark2" width = "250" height = "320">
+			<h3 id="bookname"> Bookmarks</h3>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 250/= </p>
+			<button class="addToCart" id ="other2" value="Bookmarks,250" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Other/08.png" alt="Magnifying glass" width = "250" height = "320">
+			<h3 id="bookname"> Magnifying Glass</h3>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 700/= </p>
+			<button class="addToCart" id ="other2" value="Magnifying Glass,700" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Other/09.png" alt="Bookmark3" width = "250" height = "320">
+			<h3 id="bookname">Bookmark </h3>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 250/= </p>
+			<button class="addToCart" id ="other2" value="Bookmark,250" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	<div class = "column">
+		<div class ="wrapper">
+			<img src="Images/Other/03.png" alt="Lamp" width = "250" height = "320">
+			<h3 id="bookname"> Table Lamp</h3>
+			<img src="Images/bookmark.png" class="bookmarks" />
+			<p id="price">Rs. 1000/= </p>
+			<button class="addToCart" id ="other2" value="Table Lamp,1000" onclick="addedToCartMessage()">Add to Cart</button>
+		</div>
+	</div>
+	
+</div>
+</div>
+
+</div>
+
+<img style="width:100%; height:70%"src="Images/End.jpg">
+
+<div id="snackbar">Added To Cart</div>
+</body>
+<script>
+
+
+
+
+</script>
+<script src="javaScript.js"></script>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="stylesheet" href="main.css">
+<style>
+body,html{
+background-color: #fff;
+}
+</style>
+</head>
+
+<body>
+<img style="width:100%;"src="Images/Start.jpg">
+<form name="form" onsubmit="return validateForm()">
+<div class="row1">
+	<div class="column1">
+		<h2>Billing Details</h2>
+		<label for="fname" style="float:left;width:45%;">First Name*</label> 
+		<label for="lname"style="float:left,width;45%; margin-left:34px;">Last Name*</label><br>
+		<input style="width:44%;" type="text" id="fname" name="firstname" placeholder="Your name"> 
+		<input style="width:50%; margin-left:34px;" type="text" id="lname" name="lastname" placeholder="Your last name">
+		<label for="street">Street Address*</label> <br>
+		<input type="text" id="street" name="streetaddress" placeholder="Your address"> <br>
+		<label for="city">Town / City</label> <br>
+		<input type="text" id="city" name="cityaddress" placeholder="Your City / Town name"> <br>
+		<label for="zip">Postcode / ZIP*</label> <br>
+		<input type="text" id="zip" name="zipcode"placeholder="Your Postcode / ZIP"> <br>
+		<label for="cars">Country*</label><br>
+			<select style="padding:0px 20px" id="cars" name="countries">
+			  <option value="notselected">Select your Country</option>
+			  <option value="sl">Srilanka</option>
+			  <option value="in">India</option>
+			  <option value="bg">Bangaladesh</option>
+			  <option value="pk">Pakistan</option>
+			</select><br>
+		<label for="phone">Phone</label> <br>
+		<input type="text" id="phone" name="phonenumber"placeholder=""> <br>
+		<label for="email">Email*</label> <br>
+		<input type="email" id="email" name="email"placeholder=""> <br>
+	</div>
+	
+	<div class="column2">
+		<h2>Your order</h2>
+		<div class="container">
+		
+			<div class="floating" style ="margin-right:">
+				<p style="font-size : 21px">Product Details</p>
+			</div>
+			
+			<div class="floating1" style ="padding-left:90px;">
+				<p style="font-size : 21px" >Price</p>
+			</div>
+			
+			<hr class="solid">
+			
+			<div class="floating" style ="margin-right:">
+				<p id="showBooks"></p>	
+			</div>
+			
+			<div class="floating1" style ="padding-left:90px;">
+				<p id="showPrice"></p>
+			</div>
+			<hr class="solid">
+			<div class="floating" style ="margin-right:">
+				<h4>Total</h4>
+			</div>	
+
+			<div class="floating1" style ="padding-left:90px;">
+				<h4 id="total"></h4>
+			</div>		
+
+			<hr class="solid">
+			<br>
+			<input class= "submitButton"type="submit" value="Submit">
+
+			
+		</div>
+	</div>
+
+</div>
+</form>
+
+</body>
+<script>
+
+
+function getBooks(){
+	books = [];
+	stringCart = localStorage.getItem("cart") ;
+	var array = stringCart.split(',');
+	for (var i = 0; i < array.length; i+=2){
+			books.push(array[i]);
+	}
+	
+	for (i = 0; i < books.length; i++){
+	document.getElementById("showBooks").innerHTML +=  books[i] + "<br>";}
+	
+}
+
+function getPrice(){
+	price = [];
+	stringCart = localStorage.getItem("cart") ;
+	var array = stringCart.split(',');
+	for (var i = 1; i < array.length; i+=2){
+			price.push(array[i]);
+	}
+	for (i = 0; i < price.length; i++)
+	document.getElementById("showPrice").innerHTML +=  "Rs. " + price[i] + "<br>";	
+}
+
+
+function totalPrice(){
+	price = [];
+	stringCart = localStorage.getItem("cart") ;
+	var array = stringCart.split(',');
+	for (var i = 1; i < array.length; i+=2){
+			price.push(array[i]);
+	}
+	
+	for ( var i = 0; i < price.length; i++ ){
+		sum += parseInt( price[i], 10 ); 
+	}
+	document.getElementById("total").innerHTML +=  "Rs. " + sum + "<br>";
+}
+
+function validateForm() {
+	var fname = document.forms["form"]["firstname"].value;
+	if (fname == "") {
+		alert("First Name must be filled out");
+		return false;
+	}
+	var lname = document.forms["form"]["lastname"].value;
+	if (lname == "") {
+		alert("Last Name must be filled out");
+		return false;
+	}
+	var streetaddress = document.forms["form"]["streetaddress"].value;
+	if (streetaddress == "") {
+		alert("Street Address must be filled out");
+		return false;
+	}
+	var zipcode = document.forms["form"]["zipcode"].value;
+	if (zipcode == "") {
+		alert("Zipcode must be filled out");
+		return false;
+	}
+	var countries = document.forms["form"]["countries"].value;
+	if (countries == "") {
+		alert("Country must be filled out");
+		return false;
+	}
+	var email = document.forms["form"]["email"].value;
+	if (email == "") {
+		alert("Email must be filled out");
+		return false;
+	}
+	
+	stringCart = localStorage.getItem("cart") ;
+	var array = stringCart.split(',');
+	orders = localStorage.getItem("orders") ;
+	var list = [];
+	var join = "for Rs." ;
+	var books = [];
+	var price = [];
+	
+	for (var i = 0; i < array.length; i+=2){
+		books.push(array[i]);
+	}
+	for (var i = 1; i < array.length; i+=2){
+		price.push(array[i]);
+	}
+	
+	for (var i = 0; i < books.length; i++){
+		list.push(books[i]);
+		list.push(join);
+		list.push(price[i]);
+	}
+	alert( "Total Items : " + orders  + " Your Order Details : " +list.join(" "));
+}
+
+
+function start(){
+	getBooks();
+	getPrice();
+	totalPrice();
+	
+}
+	
+
+window.onload = start;
+
+
+
+
+</script>
+<script src="javaScript.js"></script>
+
+</html>
