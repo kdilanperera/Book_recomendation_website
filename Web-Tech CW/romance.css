@@ -103,3 +103,24 @@ body{
     height: 380px;
     width: 270px;
 }
+
+.editor button{
+    background-color: white;
+    width:180px;
+    height: 45px;
+    margin: 8px;
+    text-align: center;
+    float: right;
+    margin-top: -685px;
+    border: #c1c1c1 solid 1px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background: transparent;
+    color: white;
+    font-size: 28px;
+}
+
+.editor :hover{
+    background-color: white transparent;
+    opacity: 0.55;
+}

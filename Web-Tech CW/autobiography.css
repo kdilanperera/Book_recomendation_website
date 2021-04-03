@@ -20,6 +20,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+
 }
 
 .textbox{
@@ -43,7 +44,6 @@ body{
 .box:hover{
     transform: scale(1.3);
     z-index: 2;
-    box-shadow: 2px 2px 2px #000;
     cursor: pointer;
 }
 
@@ -104,4 +104,25 @@ body{
     margin-top: 9px;
     height: 380px;
     width: 270px;
+}
+
+.editor button{
+    background-color: white;
+    width:180px;
+    height: 45px;
+    margin: 8px;
+    text-align: center;
+    float: right;
+    margin-top: -685px;
+    border: #c1c1c1 solid 1px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    background: transparent;
+    color: white;
+    font-size: 28px;
+}
+
+.editor :hover{
+    background-color: white transparent;
+    opacity: 0.55;
 }
