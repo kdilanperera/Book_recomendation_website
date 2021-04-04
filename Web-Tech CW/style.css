@@ -129,6 +129,11 @@ form button{
     border: none;
 }
 
+.button ul :focus {
+    background-color: red; 
+    opacity: 0.6;
+}
+
 .button1{
     margin-top: -23px;
 }
